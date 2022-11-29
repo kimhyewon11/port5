@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>shop</title>
+</head>
+<body>
+    <%- include ("common/header.ejs",{page:"main"})%>
+    <div id="container">
+       <div class="store_cont">
+            <div class="list">
+                <div class="slider">
+                    <img src="/img/store8.jpg">
+                    <img src="/img/store3.jpg">
+                    <img src="/img/store11.jpg">
+                    <img src="/img/store1.jpg">
+                    <img src="/img/store6.jpg">
+                    <img src="/img/store7.jpg">
+                    <div class="pagebtns">
+                        <div class="prev_btn"><span class="material-symbols-outlined">arrow_back_ios</span></div>
+                        <div class="next_btn"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="time">
+                        <p>SHOWROOM : 10:30 - 19:00</p>
+                        <p>BAR : 19:00 - 2:00 (FRI,SAT 4:00) Monday Closed</p>
+                    </div>
+                    <p>A. 신사동 540, 강남구 , 서울시</p>
+                    <p>T. +82 0507 1307 6070</p>
+                </div>
+                <div class="info">
+                    <div class="time">
+                        <p>SHOWROOM : 10:30 - 19:00</p>
+                        <p>BAR : 19:00 - 2:00 (FRI,SAT 4:00) Monday Closed</p>
+                    </div>
+                    <p>A. 제주 서귀포시 안덕면 사계북로 157-20 빌라사계</p>
+                    <p>T. 064 792 6006 </p>
+                </div>
+                <form class="s_searchbox" action="/search/storelocal" method="get">
+                    <div >
+                        <div class="search_text">지역으로 검색</div>
+                        <!-- 시/도 선택-->
+                        <select id="city1" name="city1">
+                            <option value>시/도 선택</option>
+                        </select>
+                        <!-- 구/군 선택-->
+                        <select id="city2" name="city2">
+                            <option value>구/군 선택</option>
+                        </select>
+                        <button type="submit">검색</button>
+                    </div>
+                </form>
+    
+                <form class="s_searchbox" action="/search/storename" method="get">
+                    <div>
+                        <div class="search_text">매장명으로 검색</div>
+                        <input type="text" name="name">
+                        <button type="submit">검색</button>
+                    </div>
+                </form>
+               
+            </div>
+       </div>
+    </div>
+    <%- include ("common/footer.ejs")%>
+    <script src="/js/store.js"></script>
+    <script src="/js/hangjungdong.js"></script>
+    <script src="/js/storeselect.js"></script>
+</body>
+</html>

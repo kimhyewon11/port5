@@ -1,0 +1,111 @@
+#container { 
+    .brd_cont1 {
+        padding-top: 180px;
+        width: 80%;
+        margin: 0 auto ;
+        height: 100vh;
+        h2 {
+            color: #163963;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        table {
+            width: 100%;
+            color: #163963;
+            font-size: 15px;
+            margin-bottom: 35px;
+            .fir {
+                border-bottom: 2px solid #163963;
+                text-align: center;
+                font-weight: 600;
+            }
+            tr {
+                border-bottom: 1px solid #163963;
+                td {
+                    font-size: 15px;
+                    padding: 20px 0;
+                }
+                .num {
+                    width: 10%;
+                    text-align: center;
+                }
+                .category {
+                    width: 10%;
+                    text-align: center;
+                }
+                .subject {
+                    width: 60%;
+                    >a {
+                        color: #163963;
+                    }
+                }
+                .writer {
+                    width: 10%;
+                    text-align: center;
+
+                }
+                .date {
+                    width: 10%;
+                    text-align: center;
+                }
+            }
+            
+
+        }
+        .brd_bot {
+            display: flex;
+            justify-content: space-between;
+            .searchWrap {
+                select,input {
+                    width: 120px;
+                    height: 50px;
+                    border: 1px solid #163963;
+                    background-color: transparent;
+                    padding: 0 10px;
+                    color: #163963;
+                    font-size: 14px;
+                    margin: 0 10px 0 0;
+                }
+               
+                .searbox {
+                    width: 180px;
+                }
+                .searbtn {
+                    position: relative;
+                    top: 0;
+                    width: 120px;
+                    height: 52px;
+                    border: 1px solid #163963;
+                    background-color: transparent;
+                    padding: 0 10px;
+                    color: #163963;
+                    font-weight: 600;
+                    transition: all 0.5s;
+                    border-radius: 50px;
+                    &:hover {
+                        background-color: #163963;
+                        color: #fff;
+                    }
+                }
+            }
+            .post {
+                display: block;
+                width:180px;
+                font-size: 14px;
+                color: #163963;
+                text-align: center;
+                line-height: 55px;
+                border-radius: 50px;
+                border: 1px solid #163963;
+                font-weight: 600;
+                transition: all 0.4s;
+                &:hover {
+                    background-color: #163963;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}

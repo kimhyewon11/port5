@@ -1,0 +1,129 @@
+#container { 
+    background-color: #d4ccbb;
+    .main_cont1 { 
+        width: 100%;
+        height: 100vh;
+        .slider { 
+            width: 100%;
+            height: 100%;
+            &:hover { 
+                .pagebtns {
+                    opacity: 1;
+                }
+            }
+            .view { 
+                display: flex;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                .box { 
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    transition: all 0.5s;
+                    >img { 
+                        width: 100%;
+                        height: 100vh;
+                    }
+                    .textwrap { 
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        text-align: center;
+                        color: #fff;
+                        >p {
+                            &:first-child {
+                                font-size: 35px;
+                                margin-bottom: 35px;
+                            }
+                            &:last-child {
+                                font-size: 90px;
+                            }
+                        }
+                    }
+                }
+               
+            }
+            .pagebtns { 
+                opacity: 0;
+                transition: all 0.5s;
+                >div { 
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    >span { 
+                        color: #fff;
+                        font-size: 40px;
+                    }
+                }
+                .prev_btn { 
+                    left: 15px;
+                }
+                .next_btn { 
+                    right: 15px;
+                }
+            }
+        }
+    }
+    .main_cont2 { 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        .center { 
+            width: 80%;
+            .cont2_title { 
+                margin: 100px 0;
+                text-align: center;
+                color: #163963;
+            }
+            .prd_wrap { 
+                width: 100%;
+                .chair_wrap { 
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    >.chair {
+                        width: 33.333333%;
+                        position: relative; 
+                        &:hover { 
+                            .hoverbox { 
+                                opacity: 1;
+                            }
+                        }   
+                        >img{ 
+                            width: 100%;
+                        }  
+                        .hoverbox { 
+                            opacity: 0;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left:0;
+                            top:0;
+                            background-color: rgba(211,204,186,0.8);
+                            transition: all 0.3s;
+                            .textwrap  {
+                                position: absolute;
+                                left: 50%;
+                                top:50%;
+                                transform: translate(-50%,-50%); 
+                                >p { 
+                                    text-align: center;
+                                    color: #163963;
+                                }
+                                .prd_name { font-size: 15px; font-weight: 500; margin-bottom: 10px; }
+                                .prd_price { font-size: 14px; }
+                            
+                            }
+                        }                      
+                    }
+                }
+                .light_wrap { 
+                    margin: 100px 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+#container { 
+    .notice_cont1 {
+        padding-top: 180px;
+        width: 80%;
+        margin: 0 auto ;
+        height: 70vh;
+        h2 {
+            color: #163963;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        table {
+            width: 100%;
+            color: #163963;
+            font-size: 15px;
+            .fir {
+                border-bottom: 2px solid #163963;
+                text-align: center;
+                font-weight: 600;
+            }
+            tr {
+                border-bottom: 1px solid #163963;
+                td {
+                    font-size: 15px;
+                    padding: 20px 0;
+                }
+                .num {
+                    width: 15%;
+                    text-align: center;
+                }
+                .subject {
+                    width: 70%;
+                    >a {
+                        color: #163963;
+                    }
+                }
+                .date {
+                    width: 30%;
+                    text-align: center;
+                }
+            }
+            
+
+        }
+    }
+}

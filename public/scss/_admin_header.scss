@@ -1,0 +1,27 @@
+#admin_header { 
+    background-color: #d4ccbb;
+    .center { 
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        align-content: center;
+        height: 100px;
+        .logo {
+            >a { 
+                >img { 
+                    width: 200px;
+                    height: 120px;
+                }
+            }
+        }
+        .logWrap {
+            line-height: 100px;
+            >a { 
+                color: #163963;
+                font-weight: bold;
+            }
+        }
+    }
+}

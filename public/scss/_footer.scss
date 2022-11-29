@@ -1,0 +1,35 @@
+#footer { 
+    background-color: #d4ccbb;
+    color: #163963;
+    display: flex;
+    justify-content: center;
+    .center { 
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px 0 70px;
+        .f_leftwrap {
+            width: 50%;
+            >p { 
+                font-size: 14px;
+                line-height: 28px;
+            }
+            .copyright { 
+                margin-top: 25px;
+                font-size: 13px;
+            }
+        }
+        .f_rightwrap { 
+            .commu_wrap {
+                display: flex;
+                >li { 
+                    margin: 0 20px;
+                    >a {
+                        font-size: 15px;
+                        color: #163963;
+                    }
+                }
+            }
+        }
+    }
+}

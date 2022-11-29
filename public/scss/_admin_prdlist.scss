@@ -1,0 +1,76 @@
+#container { 
+    .admin_menu {
+        display: flex;
+        width: 80%;
+        margin: 0 auto 50px;
+        >li { 
+            margin: 0 25px;
+            >a { 
+                font-weight: 600;
+                font-size: 14px;
+                color:#163963 ;
+            }
+        }
+    }
+    .prdWrap { 
+        .list { 
+            margin: 0 auto 50px;
+            width: 80%;
+            border: 1px solid #163963;
+            padding: 20px 10px;
+            color: #163963;
+            >h3 { 
+                font-size: 17px;
+                margin-bottom: 15px;
+            }
+            >p {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            >img {
+                width: 100px;
+                height: 100px;
+                margin-top: 20px;
+            }
+        }
+    }
+    #prdform { 
+        width: 80%;
+        margin: 120px auto 0;
+        color: #163963;
+        padding: 50px 0 200px;
+        border-top: 1px solid #163963;
+        >input,select,option { 
+            width: 190px;
+            height: 50px;
+            margin: 15px;
+            padding-left: 10px;
+        }
+        >div,p {
+            margin: 15px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .photos { 
+            border: 1px solid #163963 ;
+            padding: 10px;
+            margin: 15px;
+        }
+        button { 
+            width: 150px;
+            height: 50px;
+            border: 1px solid #163963;
+            border-radius: 50px;
+            background-color: transparent;
+            color: #163963;
+            font-size: 15px;
+            font-weight: 600;
+            margin: 10px 0 0 30px;
+            &:hover { 
+                background-color: #163963;
+                color: #fff;
+            }
+        }
+    }
+
+}

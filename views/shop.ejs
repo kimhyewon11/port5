@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>shop</title>
+</head>
+<body>
+    <%- include ("common/header.ejs",{page:"notmain"})%>
+    <div id="container">
+        <div class="shop_cont1">
+            <dis class="center">
+                <ul class="menu">
+                    <li><a href="/menu/all">ALL</a></li>
+                    <li><a href="/menu/sofatable">SOFA TABLE</a></li>
+                    <li><a href="/menu/chair">CHAIR</a></li>
+                    <li><a href="/menu/barchair">barchair</a></li>
+                    <li><a href="/menu/sofa">SOFA</a></li>
+                </ul>
+                <ul class="prdlist">
+                    <!-- 관리자 상품 등록 데이터 불러오기 -->
+                    <a class="prdbox" href="/shopdetail">
+                        <img src="/img/prd1.jpg">
+                        <div class="hoverbox">
+                            <div class="textwrap">
+                                <p class="prd_name">HUG CHAIR</p>
+                                <p class="prd_price">460,000원</p>
+                            </div>
+                        </div>
+                    </a>
+                </ul>
+            </dis>
+        </div>
+    </div>
+    <%- include ("common/footer.ejs")%>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>prd detail</title>
+</head>
+<body>
+    <%- include ("common/header.ejs",{page:"notmain"})%>
+    <div id="container">
+        <!-- 관리자 prd 에서 prd name, prd subtext , prd price ,shpping -->
+        <div class="prddt_cont1">
+            <div class="center">
+                <div class="prdImgwrap">
+                    <div class="mainImg"><img src="/img/prd1.jpg"></div>
+                    <div class="subImgs">
+                        <div class="subImg"><img src="/img/prd2.jpg"></div>
+                        <div class="subImg"><img src="/img/prd2.jpg"></div>
+                        <div class="subImg"><img src="/img/prd2.jpg"></div>
+                        <div class="subImg"><img src="/img/prd2.jpg"></div>    
+                        <div class="subImg"><img src="/img/prd2.jpg"></div>    
+                    </div>
+                </div>
+                <div class="prdcontents">
+                    <p class="prd_name">BOUNCE CHAIR</p>
+                    <div class="shippingInfo">
+                        <p>*수도권(서울/경기) : 15일 내외 소요 (영업일 기준)</p>
+                        <p>*수도권 제외 지역 : 20일 내외 소요 (영업일 기준)</p>
+                        <p>*제주 및 도서, 산간 지역의 경우 배송료가 추가 될 수 있습니다.</p>
+                    </div>
+                    <p class="prd_subtext">MATERIALS l polishing stainless steel, fabric
+                        COLOR l sand corduroy, orange corduroy, green corduroy, black corduroy
+                        SIZE l W470 D530 H820
+                    </p>
+                    <p class="prd_price">420,000원</p>
+                    <p class="ship_price">배송비<span>30,000원(1개마다 반복 부과)</span></p>
+                    <p class="prd_color">COLOR</p>
+                    <p class="selectbox">선택하세요.
+                    <div class="btns">
+                        <a href="#">구매하기</a>
+                        <a href="#">장바구니에 담기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include ("common/footer.ejs")%>
+</body>
+</html>
