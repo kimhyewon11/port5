@@ -1,0 +1,47 @@
+@media screen and (max-width:1200px)
+{
+   
+}
+@media screen and (max-width:1024px)
+{
+    
+}
+@media screen and (max-width:800px)
+{
+    #container { 
+        .brdinsert_cont1 {
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width:540px)
+{
+    #container { 
+        .brdinsert_cont1 {            
+            form {
+                .row {
+                    display: block;
+                    width: 100%;
+                    .wrap {
+                        width: 95%;
+                        margin: 0 0 30px;
+                        select,input {
+                            padding: 10px 0 10px 10px;
+                        }
+                    }
+                }
+                .content {
+                    width: 100%;
+                    padding: 15px 0 0 ;
+                  
+                }
+                .btns {
+                    width: 100%;
+                    >a,button {
+                        width: 45%;
+                    }
+                }
+            }
+        }
+    }
+}

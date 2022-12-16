@@ -29,12 +29,9 @@
                     <p>Cat :<%- prdData[i].category%></p>
                     <p>Pri :<%- prdData[i].price%></p>
                     <p>address :<%- prdData[i].address%></p>
-                    <img src="/upload/<%- prdData[i].thumbnail%>">
-                    <img src="/upload/<%- prdData[i].contImg1%>">
-                    <img src="/upload/<%- prdData[i].contImg2%>">
-                    <img src="/upload/<%- prdData[i].contImg3%>">
-                    <img src="/upload/<%- prdData[i].contImg4%>">
-                    <img src="/upload/<%- prdData[i].contImg5%>">
+                    <% for (let j = 0; j < prdData[i].thumbnail.length ;j++ ) { %>
+                        <img src="/upload/<%- prdData[i].thumbnail[j]%>">
+                    <% } %>
                 </div>
             <% } %>
             
@@ -53,15 +50,13 @@
             <input type="text" name="price" placeholder="price">
             <div class="mainphoto">
                 <p>메인사진</p>
-                <input class="photos" type="file" name="thumbnail" >
+                <input class="photos" type="file" name="thumbnail" required>
             </div>
             <div class="subphotos">
                 <p>서브사진들</p>
-                <input class="photos" type="file" name="thumbnail" >
-                <input class="photos" type="file" name="thumbnail" >
-                <input class="photos" type="file" name="thumbnail" >
-                <input class="photos" type="file" name="thumbnail" >
-                <input class="photos" type="file" name="thumbnail" >
+                <% for(let i=0; i<5; i++){%>
+                <input class="photos" type="file" name="thumbnail">
+                <% } %>
             </div>
             
             <button type="submit">submit</button>

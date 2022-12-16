@@ -85,90 +85,34 @@
                 <h2 class="cont2_title">FURNITURE COLLECTION</h2>
                 <div class="prd_wrap">
                     <div class="chair_wrap">
-                        <div class="chair">
-                            <img src="/img/prd1.jpg">
+                        <% for (let i = 0; i < 9 ; i++ ) {%>
+                        <a class="chair" href="/shopdetail/<%- prdData[i].num%>">
+                            <img src="/upload/<%- prdData[i].thumbnail[0]%>">
                             <div class="hoverbox">
                                 <div class="textwrap">
-                                    <p class="prd_name">HUG CHAIR</p>
-                                    <p class="prd_price">460,000원</p>
+                                    <p class="prd_name"><%- prdData[i].name%></p>
+                                    <p class="prd_price"><%- prdData[i].price%></p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="chair">
-                            <img src="/img/prd2.jpg">
-                            <div class="hoverbox">
-                                <div class="textwrap">
-                                    <p class="prd_name">BOUNCE CHAIR</p>
-                                    <p class="prd_price">420,000원</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chair">
-                            <img src="/img/prd3.jpg">
-                            <div class="hoverbox">
-                                <div class="textwrap">
-                                    <p class="prd_name">LINE CHAIR</p>
-                                    <p class="prd_price">390,000원</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chair">
-                            <img src="/img/prd4.jpg">
-                            <div class="hoverbox">
-                                <div class="textwrap">
-                                    <p class="prd_name">COLOR SIDE TABLE</p>
-                                    <p class="prd_price">195,000원</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chair">
-                            <img src="/img/prd5.jpg">
-                            <div class="hoverbox">
-                                <div class="textwrap">
-                                    <p class="prd_name">LAYERED SIDE TABLE</p>
-                                    <p class="prd_price">520,000원</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chair">
-                            <img src="/img/prd6.jpg">
-                            <div class="hoverbox">
-                                <div class="textwrap">
-                                    <p class="prd_name">LEAF EASY CHAIR</p>
-                                    <p class="prd_price">680,000원</p>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
+                        <% } %>
                     </div>
-                    <div class=" chair_wrap light_wrap">
-                        <div class="chair light">
-                            <img src="/img/light1.jpg">
-                            <div class="hoverbox">
-                                <div class="textwrap">
-                                    <p class="prd_name">TRAMA_suspension l LUCEPLAN</p>
-                                    <p class="prd_price">1,164,000원</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chair light">
-                            <img src="/img/light2.jpg">
-                            <div class="hoverbox">
-                                <div class="textwrap">
-                                    <p class="prd_name">MODEL2065 l ASTEP</p>
-                                    <p class="prd_price">1,889,000원</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chair light">
-                            <img src="/img/light3.jpg">
-                            <div class="hoverbox">
-                                <div class="textwrap">
-                                    <p class="prd_name">MICONOS_ceiling l ARTEMIDE</p>
-                                    <p class="prd_price">834,000원</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="main_cont3">
+            <div class="bg">
+                <div class="leftWrap">
+                    <p>합리적인 가격으로,</p>
+                    <p>클럽 무브먼트 멤버십</p>
+                    <a href="#">더 알아보기</a>
+                </div>
+                <div class="rightWrap">
+                    <p>C L U B</p>
+                    <p>M O V E</p>
+                    <p>M E N T</p>
+                    <span>Discovery of My taste</span>
                 </div>
             </div>
         </div>

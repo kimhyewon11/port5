@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>prdlist</title>
+</head>
+<body>
+    <%- include ("common/admin_header.ejs")%>
+    <div id="container">
+        <ul class="admin_menu">
+            <li><a href="/admin/prdlist">상품등록페이지</a></li>
+            <li><a href="/admin/storelist">매장등록페이지</a></li>
+            <li><a href="/admin/newslist">뉴스등록페이지</a></li>
+            <li><a href="/admin/noticelist">공지등록페이지</a></li>
+        </ul>
+        <% for (let i =0; i< noticeData.length; i++){%>
+            <ul class="newsWrap">
+                <li>No. <%- noticeData[i].num%></li>
+                <li>Title. <%- noticeData[i].title%></li>
+                <li>Add. <%- noticeData[i].content%></li>
+            </ul>
+        <% } %>
+        <form id="newsform" action="/add/noticelist" method="post" >
+            <p>공지 등록하기</p>
+            <input type="text" name="title" placeholder="title">
+            <input class="addr" type="text" name="content"  placeholder="content">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@media screen and (max-width:1200px)
+{
+    #container { 
+        .notice_cont1 {
+            
+            .paging { 
+                width: 30%;
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px)
+{
+   
+}
+@media screen and (max-width:930px)
+{
+    #container { 
+        .notice_cont1 {
+            width: 90%;
+            .paging { 
+                width: 40%;
+            }
+        }
+    }
+}
+@media screen and (max-width:540px)
+{
+    #container { 
+        .notice_cont1 {
+            width: 90%;
+            .paging { 
+                width: 70%;
+            }
+        }
+    }
+ 
+}

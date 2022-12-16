@@ -2,7 +2,7 @@
     <div class="center">
         <h1 class="logo"><a href="/"><img src="/img/logo.png"></a></h1>
         <ul class="gnb <%- page == "notmain" ? "notmain" : null %>">
-            <li><a href="/shop">SHOP</a></li>
+            <li><a href="/shop/all">SHOP</a></li>
             <li><a href="/news">NEWS</a></li>
             <li><a href="/store">SPACES</a></li>
             <li><a href="/notice">NOTICE</a></li>
@@ -14,28 +14,66 @@
                     <li><a href="/login">Login</a></li>
                     <li><a href="/join">Join</a></li>
                 </ul>
-            <% } else {%>
+            <% } else if (userdata.joinid != "admin1234") {%>
                 <ul class="log">
                     <li><a href="/mypage"><%-userdata.joinname%>님</a></li>
                     <li><a href="/logout">Logout</a></li>
                 </ul>
-            <% } %>
+            <% } else if (userdata.joinid == "admin1234") {%>
+                <ul class="log">
+                    <li><a href="/mypage"><%-userdata.joinname%>님</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                    <li><a href="/admin/prdlist">관리자 페이지</a></li>
+                </ul>
+            <% } %>  
         </div>
-        <a class="menubtn" href="#">
-            <span></span>
-            <span></span>
-        </a>
+        <div class="menubtn">
+            <span class="one"></span>
+            <span class="two"></span>
+        </div>
         <div class="m_submenuwrap">
-            <a class="login" href="#">Log In</a>
             <ul class="m_gnb">
-                <li><a href="/shop">SHOP</a></li>
+                <li><a href="/shop/all">SHOP</a></li>
                 <li><a href="/news">NEWS</a></li>
                 <li><a href="/store">SPACES</a></li>
                 <li><a href="/notice">NOTICE</a></li>
                 <li><a href="/board">BOARD</a></li>
             </ul>
+            <div class="condition  <%- page == "notmain" ? "on" : null %>">
+                <% if(!userdata) {%>
+                    <ul class="log">
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/join">Join</a></li>
+                    </ul>
+                <% } else if (userdata.joinid != "admin1234") {%>
+                    <ul class="log">
+                        <li><a href="/mypage"><%-userdata.joinname%>님</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                <% } else if (userdata.joinid == "admin1234") {%>
+                    <ul class="log">
+                        <li><a href="/mypage"><%-userdata.joinname%>님</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                        <li><a href="/admin/prdlist">관리자 페이지</a></li>
+                    </ul>
+                <% } %>  
+            </div>
         </div>
         
     </div>
 </div>
 <script src="/js/navbar.js"></script>
+<script>
+    const menubtn = document.querySelector(".menubtn")
+    const subgnb = document.querySelector(".m_submenuwrap")
+
+    let one =document.querySelector(".one")
+    let two =document.querySelector(".two")
+
+    menubtn.addEventListener("click",(e)=>{
+        subgnb.classList.toggle("on");
+        one.classList.toggle("on");
+        two.classList.toggle("on");
+        
+    })
+</script>

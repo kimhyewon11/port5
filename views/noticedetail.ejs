@@ -16,14 +16,16 @@
     <div id="container">
         <div class="noticedt">
             <div class="topwrap">
-                <h3 class="notice_title">홈페이지 리뉴얼 안내</h3>
-                <p>날짜 : </p>
+                <h3 class="notice_title"><%- noticeData.title%></h3>
+                <p>날짜 : <%- noticeData.date%> </p>
             </div>
             <div class="botwrap">
-                content 
+                <%- noticeData.content%>
             </div>
-            <a class="list" href="/notice">Return to list</a>
-          
+            <div class="btns">
+                <a class="list" href="/notice">Return to list</a> 
+            </div>
+
         </div>
     </div>
     <%- include ("common/footer.ejs")%>

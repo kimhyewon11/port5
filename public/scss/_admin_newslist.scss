@@ -1,0 +1,63 @@
+#container { 
+    .newsWrap { 
+        width: 80%;
+        margin: 0 auto 50px;
+        border: 1px solid #163963;
+        padding: 10px;
+        li { 
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .imgwrap { 
+            display: flex;
+            img { 
+                width: 150px ;
+                height: 150px;
+                margin: 10px;
+            }
+        }
+    }
+    #newsform { 
+        width: 80%;
+        margin: 0 auto;
+        border-top:1px solid #163963;
+        padding: 25px 0 200px;
+        color:#163963 ;
+        p { 
+            font-size: 15px;
+            font-weight: 600;
+            margin: 15px 0; 
+        }
+        input { 
+            width: 200px;
+            height: 30px;
+            background-color: transparent;
+            border: 1px solid #163963;
+            padding: 10px;
+            color: #163963;
+            margin: 10px;
+        }
+        .addr { 
+            width: 600px;
+            height: 100px;
+        }
+        button { 
+            display: block;
+            width:180px;
+            font-size: 15px;
+            color: #163963;
+            text-align: center;
+            line-height: 55px;
+            border-radius: 50px;
+            border: 1px solid #163963;
+            font-weight: 600;
+            transition: all 0.4s;
+            margin: 50px 0 0;
+            background-color: transparent;
+            &:hover {
+                background-color: #163963;
+                color: #fff;
+            }
+        }
+    }
+}

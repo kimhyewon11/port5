@@ -16,30 +16,16 @@
     <div id="container">
         <div class="news_cont1">
             <div class="newswrap">
-                <a href="/newsdetail" class="news">
+                <% for( let i =0 ; i < newsData.length; i++){%>
+                <a href="/newsdetail/<%-newsData[i].num%>" class="news">
                     <div class="imgwrap">
-                        <img src="/img/news1.jpg">
+                        <img src="/upload/<%-newsData[i].thumbnail[0]%>">
                         <div class="hoverImg"></div>
                     </div>
-                    <div class="news_title">10월 Monthly Review | 차분하고 고급스러운 모노톤 거실 공간</div>
-                    <div class="news_date">2022.10.11</div>
+                    <div class="news_title"><%-newsData[i].month%> Monthly Review | <%-newsData[i].title%></div>
+                    <div class="news_date"><%-newsData[i].date%></div>
                 </a>
-                <a href="#" class="news">
-                    <div class="imgwrap">
-                        <img src="/img/news2.jpg">
-                        <div class="hoverImg"></div>
-                    </div>
-                    <div class="news_title">10월 Monthly Review | 차분하고 고급스러운 모노톤 거실 공간</div>
-                    <div class="news_date">2022.10.11</div>
-                </a>
-                <a href="#" class="news">
-                    <div class="imgwrap">
-                        <img src="/img/news3.jpg">
-                        <div class="hoverImg"></div>
-                    </div>
-                    <div class="news_title">10월 Monthly Review | 차분하고 고급스러운 모노톤 거실 공간</div>
-                    <div class="news_date">2022.10.11</div>
-                </a>
+                <% } %>
             </div>
         </div>
     </div>

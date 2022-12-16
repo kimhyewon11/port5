@@ -28,22 +28,24 @@
                         <div class="next_btn"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
                     </div>
                 </div>
+                <% for (let i =0; i < storeData.length; i++){%>
                 <div class="info">
+                    <p class="st_name"><%- storeData[i].name%></p>
                     <div class="time">
-                        <p>SHOWROOM : 10:30 - 19:00</p>
-                        <p>BAR : 19:00 - 2:00 (FRI,SAT 4:00) Monday Closed</p>
+                        <p><%- storeData[i].time%></p>
                     </div>
-                    <p>A. 신사동 540, 강남구 , 서울시</p>
-                    <p>T. +82 0507 1307 6070</p>
+                    <p><%- storeData[i].address%></p>
+                    <p><%- storeData[i].phone%></p>
                 </div>
-                <div class="info">
+                <% } %>
+                <!-- <div class="info">
                     <div class="time">
                         <p>SHOWROOM : 10:30 - 19:00</p>
                         <p>BAR : 19:00 - 2:00 (FRI,SAT 4:00) Monday Closed</p>
                     </div>
                     <p>A. 제주 서귀포시 안덕면 사계북로 157-20 빌라사계</p>
                     <p>T. 064 792 6006 </p>
-                </div>
+                </div> -->
                 <form class="s_searchbox" action="/search/storelocal" method="get">
                     <div >
                         <div class="search_text">지역으로 검색</div>

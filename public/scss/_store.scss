@@ -51,6 +51,10 @@
                 border-bottom: 1px solid #163963;
                 padding-bottom: 50px;
                 &:last-child { border: none;}
+                >.st_name { 
+                    font-size: 20px;
+                    font-weight: 600;
+                }
                 p {
                     line-height: 35px;
                     font-size: 15px;
@@ -69,12 +73,29 @@
                 .search_text { 
                     font-size: 15px;
                     font-weight: 600;
+                    margin-bottom: 10px;
                 }
                 select,input { 
-                    width: 170px;
+                    width: 180px;
                     height: 35px;
                     background-color: transparent;
                     border: 1px solid #163963;
+                    margin: 0 10px;
+                }
+                button { 
+                    width: 120px;
+                    height: 40px;
+                    background-color: transparent;
+                    border: 1px solid #163963;
+                    border-radius: 50px;
+                    color: #163963;
+                    font-weight: 600;
+                    margin-left: 15px;
+                    transition: all 0.5s;
+                    &:hover { 
+                        background-color: #163963;
+                        color: #fff;
+                    }
                 }
             }
         }

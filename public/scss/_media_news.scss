@@ -1,0 +1,41 @@
+@media screen and (max-width:1200px)
+{
+   
+}
+@media screen and (max-width:1024px)
+{
+    #container { 
+        .news_cont1 {
+            .newswrap { 
+                width: 90%;
+            }
+        }
+       }
+}
+@media screen and (max-width:930px)
+{
+   #container { 
+    .news_cont1 {
+        .newswrap { 
+            .news {
+                width: 50%;
+            }
+        }
+    }
+   }
+}
+@media screen and (max-width:540px)
+{
+    #container { 
+        .news_cont1 {
+            .newswrap { 
+                width: 94%;
+                .news {
+                    width: 100%;
+                }
+            }
+        }
+       }
+    
+    
+}

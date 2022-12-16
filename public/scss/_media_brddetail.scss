@@ -1,0 +1,30 @@
+@media screen and (max-width:1200px)
+{
+   
+}
+@media screen and (max-width:1024px)
+{
+    
+}
+@media screen and (max-width:930px)
+{
+    #container { 
+        .brddetail_cont {
+            width: 70%;
+            .content { 
+                height: 400px;
+            }
+        }
+    }
+}
+@media screen and (max-width:540px)
+{
+    #container { 
+        .brddetail_cont {
+            width: 90%;
+            .content { 
+                height: 400px;
+            }
+        }
+    }
+}

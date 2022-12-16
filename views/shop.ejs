@@ -17,23 +17,27 @@
         <div class="shop_cont1">
             <dis class="center">
                 <ul class="menu">
-                    <li><a href="/menu/all">ALL</a></li>
-                    <li><a href="/menu/sofatable">SOFA TABLE</a></li>
-                    <li><a href="/menu/chair">CHAIR</a></li>
-                    <li><a href="/menu/barchair">barchair</a></li>
-                    <li><a href="/menu/sofa">SOFA</a></li>
+                    <li><a href="/shop/all">ALL</a></li>
+                    <li><a href="/shop/sofatable">SOFA TABLE</a></li>
+                    <li><a href="/shop/chair">CHAIR</a></li>
+                    <li><a href="/shop/barchair">BAR CHAIR</a></li>
+                    <li><a href="/shop/sofa">SOFA</a></li>
                 </ul>
                 <ul class="prdlist">
                     <!-- 관리자 상품 등록 데이터 불러오기 -->
-                    <a class="prdbox" href="/shopdetail">
-                        <img src="/img/prd1.jpg">
-                        <div class="hoverbox">
-                            <div class="textwrap">
-                                <p class="prd_name">HUG CHAIR</p>
-                                <p class="prd_price">460,000원</p>
+                    <% for ( let i = 0; i <prdData.length; i++) { %>
+                    <li class="list">
+                        <a class="prdbox" href="/shopdetail/<%- prdData[i].num%>">
+                            <img src="/upload/<%-prdData[i].thumbnail[0]%>">
+                            <div class="hoverbox">
+                                <div class="textwrap">
+                                    <p class="prd_name"><%-prdData[i].name%></p>
+                                    <p class="prd_price"><%-prdData[i].price%></p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </li>
+                    <% } %>
                 </ul>
             </dis>
         </div>

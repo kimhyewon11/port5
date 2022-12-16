@@ -18,44 +18,53 @@
                     }
                 }
             }
+        
             .prdlist { 
                 display: flex;
                 flex-wrap: wrap;
-                .prdbox { 
+                .list  {
                     width: 33.333333%;
-                    position: relative; 
-                        &:hover { 
-                            .hoverbox { 
-                                opacity: 1;
-                            }
-                        }   
-                        >img{ 
-                            width: 100%;
-                        }  
-                        .hoverbox { 
-                            opacity: 0;
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            left:0;
-                            top:0;
-                            background-color: rgba(211,204,186,0.8);
-                            transition: all 0.3s;
-                            .textwrap  {
-                                position: absolute;
-                                left: 50%;
-                                top:50%;
-                                transform: translate(-50%,-50%); 
-                                >p { 
-                                    text-align: center;
-                                    color: #163963;
+                    height: 362px;
+                    .prdbox { 
+                        width: 100%;
+                        height: 362px;
+                        display: block;
+                        position: relative; 
+                            &:hover { 
+                                .hoverbox { 
+                                    opacity: 1;
                                 }
-                                .prd_name { font-size: 15px; font-weight: 500; margin-bottom: 10px; }
-                                .prd_price { font-size: 14px; }
-                            
-                            }
-                        } 
+                            }   
+                            >img{ 
+                                width: 100%;
+                                height: 100%;
+                            }  
+                            .hoverbox { 
+                                opacity: 0;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                left:0;
+                                top:0;
+                                background-color: rgba(211,204,186,0.8);
+                                transition: all 0.3s;
+                                .textwrap  {
+                                    position: absolute;
+                                    left: 50%;
+                                    top:50%;
+                                    transform: translate(-50%,-50%); 
+                                    >p { 
+                                        text-align: center;
+                                        color: #163963;
+                                    }
+                                    .prd_name { font-size: 15px; font-weight: 500; margin-bottom: 10px; }
+                                    .prd_price { font-size: 14px; }
+                                
+                                }
+                            } 
+                    }
                 }
+                
             }
         }
     }

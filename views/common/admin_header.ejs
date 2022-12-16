@@ -2,8 +2,8 @@
     <div class="center">
         <h1 class="logo"><a href="/"><img src="/img/logo.png"></a></h1> 
         <div class="logWrap">
-            <% if(!admindata) {%>
-                <a class="login" href="/admin">Login</a>
+            <% if(!userdata) {%>
+                <a class="login" href="/login">Login</a>
             <% } else {%>
                 <a href="#">관리자님</a>
                 <a class="logout" href="/logout">Logout</a>

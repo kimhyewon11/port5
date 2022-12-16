@@ -48,10 +48,11 @@
             .pagebtns { 
                 opacity: 0;
                 transition: all 0.5s;
+                width: 50px;
+                height: 50px;
                 >div { 
                     position: absolute;
                     top: 50%;
-                    transform: translateY(-50%);
                     >span { 
                         color: #fff;
                         font-size: 40px;
@@ -84,9 +85,14 @@
                     display: flex;
                     flex-wrap: wrap;
                     width: 100%;
+                    
                     >.chair {
                         width: 33.333333%;
                         position: relative; 
+
+                        &:nth-child(7),&:nth-child(8),&:nth-child(9) {
+                            margin: 150px 0;
+                        }
                         &:hover { 
                             .hoverbox { 
                                 opacity: 1;
@@ -119,9 +125,54 @@
                             }
                         }                      
                     }
+                    
                 }
-                .light_wrap { 
-                    margin: 100px 0;
+            }
+        }
+    }
+    .main_cont3 {
+        color: #163963;
+        .bg {
+            background-color: #c0b5a0;
+            padding: 100px 200px;
+            display: flex;
+            justify-content: space-between;
+            .leftWrap { 
+                >p { 
+                    font-size: 30px;
+                    margin: 20px 0;
+                    &:nth-child(2) { 
+                        font-weight: 600;
+                    }
+                }
+                >a { 
+                    display: block;
+                    border: 1px solid #163963;
+                    line-height: 50px;
+                    width: 150px;
+                    border-radius: 50px;
+                    text-align: center;
+                    color: #163963;
+                    margin-top: 50px;
+                    transition: all 0.5s;
+                    font-size: 15px;
+                    font-weight: 600;
+                    &:hover { 
+                        background-color: #163963;
+                        color: #fff;
+                    }
+                }
+            }
+            .rightWrap { 
+                >p {
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin: 15px 0;
+                }
+                >span { 
+                    display: block;
+                    font-size: 15px;
+                    margin-top: 70px;
                 }
             }
         }

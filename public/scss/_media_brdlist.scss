@@ -1,0 +1,58 @@
+@media screen and (max-width:1200px)
+{
+    #container { 
+        .brd_cont1 {
+            .paging { 
+                width: 25%;
+  
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px)
+{
+  
+}
+@media screen and (max-width:930px)
+{
+    #container { 
+        .brd_cont1 {
+            width: 90%;
+            .paging { 
+                width: 25%;
+            }
+        }
+    }
+}
+@media screen and (max-width:540px)
+{
+    #container { 
+        .brd_cont1 {
+            width: 90%;
+            table {
+                tr {
+                    .num {
+                        width: 7%;
+                    }
+                    .subject {
+                        width: 37%;
+                    }
+                }
+            }
+            .paging { 
+                width: 50%;
+            }
+            .brd_bot {
+                align-items: center;
+                .searchWrap {
+                    select,input {
+                        margin: 10px 0 0 0;
+                    }
+                    .searbtn {
+                        top: 13px;
+                    }
+                }  
+            }
+        }
+    }
+}

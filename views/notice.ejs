@@ -22,12 +22,46 @@
                     <td class="subject">Subject</td>
                     <td class="date">Date</td>
                 </tr>
+                <%for(let i = 0; i < noticeData.length;i++){%>
                 <tr>
-                    <td class="num">공지</td>
-                    <td class="subject"><a href="/noticedt">홈페이지 리뉴얼 안내</a></td>
-                    <td class="date">2022.11.24</td>
+                    <td class="num"><%- noticeData[i].num%></td>
+                    <td class="subject"><a href="/noticedt/<%- noticeData[i].num%>"><%- noticeData[i].title%></a></td>
+                    <td class="date"><%- noticeData[i].date%></td>
                 </tr>
+                <%}%>
             </table>
+            <ul class="paging">
+                <% if(pageNumber <= 1){ %>
+                    <li class="none">처음</li>
+                <% } else {%>
+                    <!-- /boardtest?page=1 -->
+                    <li><a href="?page=1">처음</a></li>
+                <% } %>
+        
+                <% if(blockStart > totalBlock){ %>
+                    <li><a href="?page=<%- blockStart-1%>">이전</a></li>
+                <% } %>
+        
+                <% for(let i = blockStart; i<= blockEnd ; i++){ %>
+                    <%if(pageNumber ==  i){%>
+                        <li class="highlight"><a href="?page=<%- i %>"><%- i %></a></li>
+                    <% } else {%>
+                        <li><a href="?page=<%- i %>"><%- i %></a></li>
+                    <% } %>
+                <% } %>
+        
+                <% if(blockNum < totalBlock  ){ %>
+                    <li><a href="?page=<%- blockEnd+1%>">다음</a></li>
+                <% } %>
+        
+        
+                <% if(pageNumber >= paging){ %>
+                    <li class="none">마지막</li>
+                <% } else {%>
+                    <!-- /boardtest?page=1 -->
+                    <li><a href="?page=<%- paging%>">마지막</a></li>
+                <% } %>
+            </ul>
         </div>
     </div>
     <%- include ("common/footer.ejs")%>

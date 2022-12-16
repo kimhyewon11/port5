@@ -6,6 +6,7 @@
         .newswrap { 
             width: 80%;
             display: flex;
+            flex-wrap: wrap;
             .news {
                 width: 33.333333%;
                 .imgwrap {
@@ -36,7 +37,7 @@
                 }
                 .news_date {
                     font-size: 13px;
-                    margin: 0 0 30px;
+                    margin: 0 0 70px;
                     text-align: center;
                     color: #555;
                 }

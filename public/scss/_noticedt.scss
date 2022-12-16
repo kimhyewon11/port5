@@ -24,21 +24,46 @@
             border-bottom: 2px solid #163963;
             margin-bottom: 35px;
         }
-        .list {
-            display: block;
-            width:180px;
-            font-size: 15px;
-            color: #163963;
-            text-align: center;
-            line-height: 55px;
-            border-radius: 50px;
-            border: 1px solid #163963;
-            font-weight: 600;
-            transition: all 0.4s;
-            &:hover {
-                background-color: #163963;
-                color: #fff;
+        .btns { 
+            display: flex;
+            justify-content: space-between;
+            .list {
+                display: block;
+                width:180px;
+                font-size: 15px;
+                color: #163963;
+                text-align: center;
+                line-height: 55px;
+                border-radius: 50px;
+                border: 1px solid #163963;
+                font-weight: 600;
+                transition: all 0.4s;
+                &:hover {
+                    background-color: #163963;
+                    color: #fff;
+                }
+            }
+            .btnWrap {
+                display: flex;
+                >a {
+                display: block;
+                width:180px;
+                font-size: 15px;
+                color: #163963;
+                text-align: center;
+                line-height: 55px;
+                border-radius: 50px;
+                border: 1px solid #163963;
+                font-weight: 600;
+                transition: all 0.4s;
+                margin: 0 10px;
+                    &:hover {
+                        background-color: #163963;
+                        color: #fff;
+                    }
+                }
             }
         }
+        
     }
 }
